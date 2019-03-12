@@ -4,7 +4,6 @@ import os
 
 su = "sudo apt "
 sui = "sudo apt install -y "
-suk = "sudo apt-key add -"
 
 def update():
     os.system(su + 'update')
