@@ -14,3 +14,4 @@ def apt_install():
     os.system(sui + 'vim')
 
 update()
+apt_install()
