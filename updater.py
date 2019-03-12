@@ -17,6 +17,7 @@ def apt_install():
     os.system(sui + 'net-tools')
     os.system(sui + 'ssh')
     os.system(sui + 'keepass2')
+    os.system(sui + 'lua5.3')
 
 
 update()
