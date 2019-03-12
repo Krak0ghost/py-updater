@@ -16,6 +16,7 @@ def apt_install():
     os.system(sui + 'leafpad')
     os.system(sui + 'net-tools')
     os.system(sui + 'ssh')
+    os.system(sui + 'keepass2')
 
 
 update()
