@@ -28,6 +28,7 @@ def docker_install():
     os.system(sui + 'apt-transport-https')
     os.system(sui + 'ca-certificates')
     os.system(sui + 'curl')
+    os.system(sui + 'gnupg2 ')
 
 
 update()
