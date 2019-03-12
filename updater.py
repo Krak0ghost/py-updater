@@ -24,7 +24,8 @@ def apt_install():
     os.system(sui + 'gnome-tweak-tool')
 
 def docker_install():
-    
+
 
 update()
 apt_install()
+docker_install()
