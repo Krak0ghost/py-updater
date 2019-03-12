@@ -12,6 +12,8 @@ def update():
 
 def apt_install():
     os.system(sui + 'vim')
+    os.system(sui + 'nmap')
+
 
 update()
 apt_install()
