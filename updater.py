@@ -3,7 +3,7 @@
 import os
 
 su = "sudo apt "
-sui = "sudo apt install "
+sui = "sudo apt install -y "
 
 def update():
     os.system(su + 'update')
@@ -11,6 +11,6 @@ def update():
     os.system(su + 'dist-upgrade -y')
 
 def apt_install():
-    
+    os.system(sui + 'vim')
 
 update()
