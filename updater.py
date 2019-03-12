@@ -13,6 +13,7 @@ def update():
 def apt_install():
     os.system(sui + 'vim')
     os.system(sui + 'nmap')
+    os.system(sui + 'leafpad')
 
 
 update()
