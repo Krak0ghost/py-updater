@@ -39,6 +39,8 @@ def docker_install():
    $(lsb_release -cs) \
    stable"')
 
+   os.system(su + 'update')
+
 update()
 apt_install()
 docker_install()
