@@ -18,6 +18,8 @@ def apt_install():
     os.system(sui + 'ssh')
     os.system(sui + 'keepass2')
     os.system(sui + 'lua5.3')
+    os.system(sui + 'gitk')
+
 
 
 update()
