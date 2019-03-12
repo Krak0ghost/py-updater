@@ -29,7 +29,7 @@ def docker_install():
     os.system(sui + 'ca-certificates')
     os.system(sui + 'curl')
     os.system(sui + 'gnupg2 ')
-
+    os.system(sui + 'software-properties-common')
 
 update()
 apt_install()
