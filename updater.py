@@ -10,4 +10,7 @@ def update():
     os.system(su + 'upgrade -y')
     os.system(su + 'dist-upgrade -y')
 
+def apt_install():
+    
+
 update()
