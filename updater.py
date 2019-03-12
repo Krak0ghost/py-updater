@@ -27,6 +27,7 @@ def docker_install():
 
     os.system(sui + 'apt-transport-https')
     os.system(sui + 'ca-certificates')
+    os.system(sui + 'curl')
 
 
 update()
