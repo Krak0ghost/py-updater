@@ -14,6 +14,7 @@ def apt_install():
     os.system(sui + 'vim')
     os.system(sui + 'nmap')
     os.system(sui + 'leafpad')
+    os.system(sui + 'net-tools')
 
 
 update()
