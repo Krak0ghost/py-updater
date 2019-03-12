@@ -4,6 +4,7 @@ import os
 
 su = "sudo apt "
 sui = "sudo apt install -y "
+suk = "sudo apt-key add -"
 
 def update():
     os.system(su + 'update')
@@ -30,6 +31,8 @@ def docker_install():
     os.system(sui + 'curl')
     os.system(sui + 'gnupg2 ')
     os.system(sui + 'software-properties-common')
+
+    os.system(curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -)
 
 update()
 apt_install()
