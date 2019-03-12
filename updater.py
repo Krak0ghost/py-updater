@@ -31,7 +31,7 @@ def docker_install():
     os.system(sui + 'gnupg2 ')
     os.system(sui + 'software-properties-common')
 
-    os.system(curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -)
+    os.system('curl -fsSL https://download.docker.com/linux/debian/gpg  | sudo apt-key add -')
 
 update()
 apt_install()
