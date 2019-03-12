@@ -32,6 +32,7 @@ def docker_install():
     os.system(sui + 'software-properties-common')
 
     os.system('curl -fsSL https://download.docker.com/linux/debian/gpg  | sudo apt-key add -')
+    os.system('sudo apt-key fingerprint 0EBFCD88')
 
 update()
 apt_install()
