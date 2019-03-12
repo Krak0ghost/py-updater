@@ -20,6 +20,7 @@ def apt_install():
     os.system(sui + 'lua5.3')
     os.system(sui + 'gitk')
     os.system(sui + 'gparted')
+    os.system(sui + 'ifupdown')
 
 
 
