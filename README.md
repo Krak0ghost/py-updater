@@ -20,7 +20,7 @@ Now we can launch script with python compilator, if we do not have this compilat
 ```
 sudo apt update && sudo apt upgrade -y && sudo apt install python -y
 ```
-If we have compilator we can turn updater.py
+If we have compiler we can turn updater.py
 
 ```
 sudo python updater.py
