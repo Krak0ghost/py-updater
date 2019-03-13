@@ -43,7 +43,7 @@ def docker_install():
    os.system(su + 'update')
    os.system(su + 'docker-ce docker-ce-cli containerd.io')
 
-   
+   os.system(docker_net)
 
 
 
