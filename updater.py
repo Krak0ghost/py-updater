@@ -57,9 +57,9 @@ def metasploit_install:
     os.system(meta_install)
 
 def wine_install():
+
+    os.system(sui + 'wine-stable')
     
-
-
 
 update()
 apt_install()
