@@ -53,6 +53,9 @@ def docker_install():
 def snap_install:
     os.system('sudo snap install atom --classic')
 
+def metasploit_install:
+    
+
 
 update()
 apt_install()
