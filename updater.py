@@ -47,11 +47,11 @@ def docker_install():
    $(lsb_release -cs) \
    stable"')
 
-   os.system(su + 'update')
-   os.system(su + 'docker-ce docker-ce-cli containerd.io')
+    os.system(su + 'update')
+    os.system(su + 'docker-ce docker-ce-cli containerd.io')
 
-   os.system(docker_net)
-   os.system(docker_pull)
+    os.system(docker_net)
+    os.system(docker_pull)
 
 def snap_install:
     os.system('sudo snap install atom --classic')
