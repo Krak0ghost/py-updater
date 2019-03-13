@@ -59,7 +59,9 @@ def metasploit_install:
 def wine_install():
 
     os.system(sui + 'wine-stable')
-    
+
+    os.system('sudo dpkg --add-architecture i386')
+
 
 update()
 apt_install()
