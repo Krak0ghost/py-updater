@@ -68,6 +68,7 @@ def wine_install():
     os.system('sudo apt-key add winehq.key')
 
     os.system(wine_repo)
+    os.system(su + 'update')
 
 update()
 apt_install()
