@@ -71,8 +71,10 @@ def wine_install():
     os.system(su + 'update')
     os.system(sui + '--install-recommends winehq-stable')
 
+
 update()
 apt_install()
 snap_install()
 docker_install()
 metasploit_install()
+wine_install()
