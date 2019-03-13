@@ -62,6 +62,7 @@ def wine_install():
 
     os.system('sudo dpkg --add-architecture i386')
     os.system('wget -nc https://dl.winehq.org/wine-builds/winehq.key')
+    os.system('sudo apt-key add winehq.key')
 
 
 update()
