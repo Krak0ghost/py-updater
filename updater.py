@@ -4,11 +4,14 @@ import os
 
 su = "sudo apt "
 sui = "sudo apt install -y "
+
 docker_net = "sudo docker network create --subnet 192.168.0.0/16 --gateway 192.168.0.1 --ip-range=192.168.0.0/24 --driver=bridge bridge5"
 docker_pull = "docker pull track2name/ubuntu && docker pull ubuntu"
 meta_install = "curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
 chmod 755 msfinstall && \
 ./msfinstall"
+
+wine_repo = "sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ cosmic main' -y"
 
 def update():
     os.system(su + 'update')
@@ -64,6 +67,7 @@ def wine_install():
     os.system('wget -nc https://dl.winehq.org/wine-builds/winehq.key')
     os.system('sudo apt-key add winehq.key')
 
+    
 
 update()
 apt_install()
