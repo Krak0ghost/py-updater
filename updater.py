@@ -4,6 +4,7 @@ import os
 
 su = "sudo apt "
 sui = "sudo apt install -y "
+docker_net = "sudo docker network create --subnet 192.168.0.0/16 --gateway 192.168.0.1 --ip-range=192.168.0.0/24 --driver=bridge bridge5"
 
 def update():
     os.system(su + 'update')
@@ -40,8 +41,11 @@ def docker_install():
    stable"')
 
    os.system(su + 'update')
-
    os.system(su + 'docker-ce docker-ce-cli containerd.io')
+
+   
+
+
 
 update()
 apt_install()
