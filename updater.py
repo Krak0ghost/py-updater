@@ -54,6 +54,7 @@ def snap_install:
     os.system('sudo snap install atom --classic')
 
 def metasploit_install:
+    os.system(meta_install)
 
 
 
