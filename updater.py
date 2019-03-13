@@ -6,6 +6,9 @@ su = "sudo apt "
 sui = "sudo apt install -y "
 docker_net = "sudo docker network create --subnet 192.168.0.0/16 --gateway 192.168.0.1 --ip-range=192.168.0.0/24 --driver=bridge bridge5"
 docker_pull = "docker pull track2name/ubuntu && docker pull ubuntu"
+meta_install = "curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+chmod 755 msfinstall && \
+./msfinstall"
 
 def update():
     os.system(su + 'update')
