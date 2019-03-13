@@ -69,6 +69,7 @@ def wine_install():
 
     os.system(wine_repo)
     os.system(su + 'update')
+    os.system(sui + '--install-recommends winehq-stable')
 
 update()
 apt_install()
