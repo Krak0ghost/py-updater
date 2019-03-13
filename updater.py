@@ -47,6 +47,8 @@ def docker_install():
    os.system(docker_net)
    os.system(docker_pull)
 
+def snap_install:
+    os.system('sudo snap install atom --classic')
 
 
 update()
