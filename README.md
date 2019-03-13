@@ -15,7 +15,7 @@ When repository is downloaded we need enter to py-updater folder.
 cd py-updater/
 ```
 
-Now we can launch script with python compilator, if we do not have this compilator we need him install.
+Now we can launch script with python compiler, if we do not have this compilator we need him install.
 
 ```
 sudo apt update && sudo apt upgrade -y && sudo apt install python -y
