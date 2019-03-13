@@ -72,6 +72,7 @@ def wine_install():
     os.system(sui + '--install-recommends winehq-stable')
 
 def reboot():
+    os.system('sudo reboot now')
 
 update()
 apt_install()
