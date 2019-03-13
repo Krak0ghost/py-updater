@@ -3,6 +3,13 @@ Simple python script to update, install important tools for specialist IT and pl
 
 # Getting Started
 
+To be sure that the script will start correctly, you should update the system.
+
+```
+sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
+```
+
+
 To use this script should clone py-updater repository.
 
 ```
