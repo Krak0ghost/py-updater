@@ -53,11 +53,15 @@ def docker_install():
     os.system(docker_net)
     os.system(docker_pull)
 
-def snap_install:
+def snap_install():
+
     os.system('sudo snap install atom --classic')
 
-def metasploit_install:
+
+def metasploit_install():
+
     os.system(meta_install)
+
 
 def wine_install():
 
