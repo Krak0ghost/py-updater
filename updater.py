@@ -41,6 +41,8 @@ def docker_install():
 
    os.system(su + 'update')
 
+   os.system(su + 'docker-ce docker-ce-cli containerd.io')
+
 update()
 apt_install()
 docker_install()
