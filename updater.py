@@ -18,7 +18,7 @@ def update():
     os.system(su + 'dist-upgrade -y')
 
 def add_repository():
-    
+    os.system('sudo add-apt-repository ppa:webupd8team/y-ppa-manager')
 
 def apt_install():
     os.system(sui + 'vim')
