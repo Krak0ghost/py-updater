@@ -17,6 +17,9 @@ def update():
     os.system(su + 'upgrade -y')
     os.system(su + 'dist-upgrade -y')
 
+def add_repository():
+    
+
 def apt_install():
     os.system(sui + 'vim')
     os.system(sui + 'nmap')
