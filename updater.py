@@ -84,4 +84,4 @@ snap_install()
 docker_install()
 metasploit_install()
 wine_install()
-reboot()
+
