@@ -82,7 +82,6 @@ def reboot():
     os.system('sudo reboot now')
 
 update()
-add_repository()
 apt_install()
 snap_install()
 metasploit_install()
