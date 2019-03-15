@@ -49,7 +49,7 @@ def docker_install():
     os.system(docker_repo)
 
     os.system(su + 'update')
-    os.system(su + 'docker-ce docker-ce-cli containerd.io')
+    os.system(docker_programs)
 
     os.system(docker_net)
     os.system(docker_pull)
