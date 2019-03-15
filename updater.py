@@ -8,7 +8,6 @@ sui = "sudo apt install -y "
 docker_net = "sudo docker network create --subnet 192.168.0.0/16 --gateway 192.168.0.1 --ip-range=192.168.0.0/24 --driver=bridge bridge5"
 docker_repo = 'sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"'
 docker_pull = "docker pull track2name/ubuntu && docker pull ubuntu"
-docker_programs = "sudo apt-get -y install docker-ce docker-ce-cli containerd.io"
 
 echo_meta = "sudo echo 'deb http://apt.metasploit.com/ lucid main' > /etc/apt/sources.list.d/metasploit-framework.list"
 key_meta = "sudo wget -O - http://apt.metasploit.com/metasploit-framework.gpg.key | apt-key add -"
@@ -46,7 +45,7 @@ def docker_install():
     os.system(docker_repo)
 
     os.system(su + 'update')
-    os.system(docker_programs)
+    os.system(sui + 'docker-ce docker-ce-cli containerd.io')
 
     os.system(docker_net)
     os.system(docker_pull)
