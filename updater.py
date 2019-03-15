@@ -16,17 +16,14 @@ key_meta = "sudo wget -O - http://apt.metasploit.com/metasploit-framework.gpg.ke
 wine_repo = "sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ cosmic main' -y"
 
 def update():
+
     os.system(su + 'update')
     os.system(su + 'upgrade -y')
     os.system(su + 'dist-upgrade -y')
 
-def add_repository():
-
-    os.system('sudo add-apt-repository ppa:webupd8team/y-ppa-manager')
-    os.system(su + 'update')
-    os.system(sui + 'y-ppa-manager')
 
 def apt_install():
+
     os.system(sui + 'vim')
     os.system(sui + 'nmap')
     os.system(sui + 'leafpad')
@@ -81,6 +78,7 @@ def wine_install():
     os.system(sui + '--install-recommends winehq-stable')
 
 def reboot():
+    
     os.system('sudo reboot now')
 
 update()
