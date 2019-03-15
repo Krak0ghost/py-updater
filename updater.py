@@ -63,7 +63,7 @@ def snap_install():
 
 def metasploit_install():
 
-    os.system(meta_install)
+    
 
 
 def wine_install():
