@@ -57,6 +57,7 @@ def docker_install():
 def snap_install():
 
     os.system('sudo snap install atom --classic')
+    os.system('sudo snap install vscode --classic')
 
 
 def metasploit_install():
