@@ -62,6 +62,7 @@ def metasploit_install():
 
     os.system(echo_meta)
     os.system(key_meta)
+    os.system(su + 'update')
 
 
 def wine_install():
