@@ -88,7 +88,3 @@ snap_install()
 metasploit_install()
 wine_install()
 docker_install()
-
-#Metasploit 
-# W: GPG error: http://downloads.metasploit.com/data/releases/metasploit-framework/apt lucid InRelease:
-#  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY CDFB5FA52007B954
